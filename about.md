@@ -10,5 +10,5 @@ permalink: /about/
 
 ## Follow Me
 
-[Github](https://github.com/huchuanwei1018)
-[知乎](https://www.zhihu.com/people/huchuanwei1018)
+* [Github](https://github.com/huchuanwei1018)
+* [知乎](https://www.zhihu.com/people/huchuanwei1018)
