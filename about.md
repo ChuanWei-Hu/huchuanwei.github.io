@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+## About Me
 
-### More Information
+* A geek from China, like to read and run.
 
-A place to include any other types of information that you'd like to include about yourself.
+## Follow Me
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[Github](https://github.com/huchuanwei1018)
+[知乎](https://www.zhihu.com/people/huchuanwei1018)
