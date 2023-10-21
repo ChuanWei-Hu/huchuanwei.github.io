@@ -1,6 +1,6 @@
 ---
 title: 搭建github博客
-author: Web Hu
+author: web Hu
 layout: post
 date: 2023-1-30
 permalink: /docs/github
