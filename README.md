@@ -7,7 +7,7 @@
 
 ## QR code
 
-<img src="{{ site.url }}/img/{{ author.payImage }}" width="200"/>
+<img src="https://github.com/chuanweihu/chuanweihu.github.io/blob/424c56f91fb5e4c88aaa86984d3fa4ec91c4f73e/img/wx.png" width="200"/>
 
 ## License
 
