@@ -3,7 +3,7 @@
  */
 
 // Google font import
-@import url(/css/font.css);
+// @import url(/css/font.css);
 
 // Custom variables
 
@@ -20,11 +20,15 @@ $border-width:               .0625rem !default;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-
-$font-family-sans-serif:     "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:      "Roboto Mono", "Courier New", monospace !default;
+$font-family-sans-serif: 'LXGW WenKai Screen R', "Calibri", Arial, sans-serif;
+$font-family-serif:          $font-family-sans-serif !default;
+$font-family-monospace:      $font-family-sans-serif !default;
 $font-family-base:           $font-family-sans-serif !default;
+
+// $font-family-sans-serif:     "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+// $font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+// $font-family-monospace:      "Roboto Mono", "Courier New", monospace !default;
+// $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root:             15px !default;

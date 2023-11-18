@@ -48,13 +48,11 @@ owner:
   twitter:  #username
   facebook: #username
   google:
-    plus: #username
-    analytics: #UA-62251910-2
+    plus:
+    analytics:
     verify:
     ad-client:
     ad-slot:
-  baiduTongji:
-    config: false
   bing-verify:
   github: chuanweihu #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
