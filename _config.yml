@@ -7,7 +7,7 @@ title: huchuanwei
 email: huchuanwei1018@gmail.com
 description: huchuanwei's blog,powered by jekyll.
 url: https://www.huchuanwei.com # the base hostname & protocol for your site
-keywords: ["jekyll", "java", "scala","blog"]
+keywords: ["jekyll", "python", "cuda","blog"]
 
 #
 ###################################
@@ -52,7 +52,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: huchuanwei #username
+  github: chuanweihu #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
