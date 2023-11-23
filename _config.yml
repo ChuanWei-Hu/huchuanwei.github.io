@@ -1,74 +1,59 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
-title: huchuanwei
-email: huchuanwei1018@gmail.com
-description: huchuanwei's blog,powered by jekyll.
-url: https://www.huchuanwei.com # the base hostname & protocol for your site
-keywords: ["jekyll", "python", "cuda","blog"]
+title:            Tw93
+description:      "Hi，我是 Tw93，是一个前端工程师，会一点 Swift / Rust / Python，喜欢折腾各种新技术。"
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Asia/Shanghai
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+github: tw93
+zhihu: tw93
+twitter: HiTw93
+v2ex: tw93
 
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+url: https://tw93.fun
+menu:
+  - title: 'Categories'
+    url: '/categories.html'
+  - title: 'About'
+    url: '/about'
+  - title: 'Weekly'
+    url: 'https://weekly.tw93.fun/'
+  - title: 'Github'
+    url: 'https://github.com/tw93'
+  - title: 'RSS'
+    url: '/feed.xml'
+
+timezone:    Africa/El_Aaiun
+locale:      zh_CN
+lang:      zh-cmn-Hans
+future:      true
+highlighter: rouge
+markdown:    kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink:   /:year-:month-:day/:title.html
+assetUrl: //tw93.fun/images/
+defaultImage: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+google_analytics: UA-57207999-1
+baidu_verify: kxGpkpWG7G
+google_verify: DbapjTyfmMvvmkuA1GiGcXMqgPQrtgxeUTGY-MrEOYw
+
+paginate: 10
+post_ext: md
+page_ext: md
+post_layout: post
+page_layout: page
+titlecase: true
+
+showBuyCoffee: true
+payImage: //gw.alipayobjects.com/zos/k/vb/1.png
+
+include: [".htaccess"]
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENSE", "package.json","node_modules"]
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
 
 plugins:
-  - jekyll-gist
-  - jemoji
-
-#
-###################################
-# Site Owner configuration
-####################################
-#
-owner:
-  name: huchuanwei
-  avatar: avatar.png
-  job: "Computing Parallel Engineer"
-  bio: "A Engineer who loves design awesome things."
-  email: huchuanwei1018@gmail.com
-  disqus-shortname: #username
-  twitter:  #username
-  facebook: #username
-  google:
-    plus:
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: chuanweihu #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
-  telegram: #username
-  payImage: wx.png
+  - jekyll-paginate
+  - jekyll-pdf-embed

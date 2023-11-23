@@ -1,6 +1,0 @@
-# skills section data
-
-label: Ability
-id : cs
-aspects: Python, C, C++, Fortran, Matlab, CUDA
-percentage: 70, 70, 50, 70, 30, 50

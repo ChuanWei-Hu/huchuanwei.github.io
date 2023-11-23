@@ -1,21 +1,16 @@
----
-layout: default
----
-
-  <div id="page">
-    <header class="page-header">
-      <h2>{{ page.title }}</h2>
-    </header>
-
-    <article class="page-content">
+<!doctype html>
+<html class="no-js" lang="{{site.lang}}">
+{% include head.html %}
+<body id="page">
+{% include header.html %}
+<div id="main" role="main">
+  <article class="hentry">
+    <div class="entry-content">
       {{ content }}
-    </article>
-
-
-  </div><!-- end page content -->
-
-
-  {% if site.owner.disqus-shortname and page.comments == true %}
-  <div id="disqus_thread"></div>
-  {% include disqus.html %}
-  {% endif %}
+    </div>
+    {% include giscus.html %}
+  </article>
+</div>
+{% include footer.html %}
+</body>
+</html>
