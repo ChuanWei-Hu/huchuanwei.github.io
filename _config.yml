@@ -1,21 +1,21 @@
-title:            Tw93
-description:      "Hi，我是 Tw93，是一个前端工程师，会一点 Swift / Rust / Python，喜欢折腾各种新技术。"
+title:            huchuanwei
+description:      "Hi，我是 huchuanwei，是一个前端工程师，会一点 Swift / Rust / Python，喜欢折腾各种新技术。"
 
-github: tw93
-zhihu: tw93
-twitter: HiTw93
-v2ex: tw93
+github: huchuanwei
+zhihu: huchuanwei
+twitter: Hihuchuanwei
+v2ex: huchuanwei
 
-url: https://tw93.fun
+url: https://www.huchuanwei.com
 menu:
   - title: 'Categories'
     url: '/categories.html'
   - title: 'About'
     url: '/about'
   - title: 'Weekly'
-    url: 'https://weekly.tw93.fun/'
+    url: 'https://weekly.huchuanwei.fun/'
   - title: 'Github'
-    url: 'https://github.com/tw93'
+    url: 'https://github.com/huchuanwei'
   - title: 'RSS'
     url: '/feed.xml'
 
@@ -30,7 +30,7 @@ sass:
   style: compressed
 
 permalink:   /:year-:month-:day/:title.html
-assetUrl: //tw93.fun/images/
+assetUrl: //huchuanwei.fun/images/
 defaultImage: data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 
 google_analytics: UA-57207999-1

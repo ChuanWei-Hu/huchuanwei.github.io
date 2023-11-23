@@ -1,5 +1,5 @@
 # 怎么做一个产品工程师？
-<!--[.footer: Tw93 - 个人经验分享 - 2022.07.29]-->
+<!--[.footer: huchuanwei - 个人经验分享 - 2022.07.29]-->
 ---
 
 # 为什么不叫前端工程师？
@@ -153,4 +153,4 @@
 
 ---
 
-# ❤️ [妙言](https://github.com/tw93/MiaoYan/)助你半小时写出 PPT
+# ❤️ [妙言](https://github.com/huchuanwei/MiaoYan/)助你半小时写出 PPT
