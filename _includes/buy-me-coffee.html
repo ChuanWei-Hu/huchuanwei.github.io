@@ -1,10 +1,12 @@
-{% if site.owner.payImage %}
+{% if site.owner.payImage1 %}
 <div class="coffee">
     <img src="{{ site.url }}/img/{{ site.owner.payImage1 }}" alt="" class="payImage1">
 </div>
+{% if site.owner.payImage2 %}
 <div class="coffee">
     <img src="{{ site.url }}/img/{{ site.owner.payImage2 }}" alt="" class="payImage2">
 </div>
+{% if site.owner.payImage3 %}
 <div class="coffee">
     <img src="{{ site.url }}/img/{{ site.owner.payImage3 }}" alt="" class="payImage3">
 </div>
