@@ -16,7 +16,7 @@ tags: [blog, Armadillo, cpp]
 
 | Function | Description | Matlab | Armadillo | Note |
 | --- | --- | --- | --- | --- |
-| 矩阵matrix：A=[] | 返回一个 2×2 的初始化矩阵 | A=[1,2; 3,4] | `arma::mat A={{1,2},{3,4}}`| $A=[1,2; 3,4]$|
+| 矩阵matrix：A=[] | 返回一个 2×2 的初始化矩阵 | A=[1,2; 3,4] | $arma::mat A={{1,2},{3,4}}$| $A=[1,2; 3,4]$|
 | eye(n, m) | 返回一个主对角线元素为 1 且其他位置元素为 0 的 n×m 矩阵; 如果n=m,返回一个主对角线元素为 1 且其他位置元素为 0 的 n×n 单位矩阵。 | `I = eye(2,3)` | `arma::mat A = arma::eye(2,3);` | $y1 = [1,0,0; 0,1,0]$ |
 | ones(n, m) | 返回一个 n×m 的全 1 矩阵 | `X = ones(2,3)` | `arma::mat A = arma::ones(2,3);` | $y1 = [1,1,1; 1,1,1]$ |
 | zeros(n, m) | 返回一个 n×m 的全 0 矩阵 | `X = zeros(2,3)` | `arma::mat A = arma::zeros(2,3);` | $y1 = [1,0,0; 0,1,0]$ |
@@ -26,7 +26,7 @@ tags: [blog, Armadillo, cpp]
 | rand(n, m) | 生成一个由介于 0 和 1 之间的均匀分布的随机数组成的 n×m 矩阵。 | `A1 = rand(1,5)` | `arma::mat A1 = arma::randu(1, 5);` | $A1 = [0.8147,0.9058,0.1270,0.9134,0.6324]$ |
 | randn(n, m) | 生成一个由标准正态分布的随机数组成的 n×m 矩阵。 | `B1 = randn(1,5)` | `arma::mat B1 = arma::randn(1, 5);` | $B1 = [0.5377,1.8339,-2.2588,0.8622,0.3188]$ |
 | sparse(n, m) | 生成 m×n 全零稀疏矩阵。 | `S = sparse(10000,5000)` | `arma::sp_mat S(1000,1000);` | $S = All zero sparse: 10000x5000$ |
-| repelem(A, m, n) | 创建一个矩阵，并将A中每个元素复制到一个新矩阵的 m×n 块中。 | `A = [1 2; 3 4]; B = repelem(A,3,2);` | `arma::mat A = {{1,2},{3,4}}; arma::mat B = arma::repelem(A,3,2);` | $A = [1 2; 3 4]; B = [1, 1, 2, 2; 1, 1, 2, 2; 1, 1, 2, 2; 3, 3, 4, 4; 3, 3, 4, 4; 3, 3, 4, 4;]$ |
+| repelem(A, m, n) | 创建一个矩阵，并将A中每个元素复制到一个新矩阵的 m×n 块中。 | `A = [1 2; 3 4]; B = repelem(A,3,2);` | $arma::mat A = {{1,2},{3,4}}; arma::mat B = arma::repelem(A,3,2);$ | $A = [1 2; 3 4]; B = [1, 1, 2, 2; 1, 1, 2, 2; 1, 1, 2, 2; 3, 3, 4, 4; 3, 3, 4, 4; 3, 3, 4, 4;]$ |
 | repmat(A, m, n) | 将矩阵副本重复到 m×n 块排列中。 | `A = diag([100 200 300]); B = repmat(A,2,3);` | `arma::vec v = {100,200,300}; arma::mat A = diagmat(v); arma::mat B = arma::repmat(A,2,3);` | $A = [100, 0, 0; 0, 200, 0; 0, 0, 300]; B = [100, 0, 0, 100, 0, 0, 100, 0, 0; 0, 200, 0, 0, 200, 0, 0, 200, 0; 0, 0, 300, 0, 0, 300, 0, 0, 300; 100, 0, 0, 100, 0, 0, 100, 0, 0; 0, 200, 0, 0, 200, 0, 0, 200, 0; 0, 0, 300, 0, 0, 300, 0, 0, 300;]$ |
 | 元胞数组cell：C={A; B} | 创建一个空的 2×1 元胞数组。 | `C = {A1; B1};` | `arma::field<mat> C(2, 1); C(0, 0)=A1; C(1, 0)=B1;` | $C = {[0.8147,0.9058,0.1270,0.9134,0.6324];[0.5377,1.8339,-2.2588,0.8622,0.3188]}$ |
 
@@ -639,8 +639,7 @@ arma::mat D =arma::join_vert(A,B);
 
 ## 推荐阅读
 
-- [阿里又一个 20k+ stars 开源项目诞生，恭喜 fastjson！](https://mp.weixin.qq.com/s/RNKDCK2KoyeuMeEs6GUrow)
-
+- [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
 
 ## Additional Resources
 
