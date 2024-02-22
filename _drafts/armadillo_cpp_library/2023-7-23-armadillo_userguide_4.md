@@ -2,6 +2,7 @@
 layout: post
 title:  Armadillo使用手册4-Cpp扩展函数
 categories: [blog]
+comments: true
 tags: [blog, Armadillo, cpp]
 ---
 

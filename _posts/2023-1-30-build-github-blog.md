@@ -2,6 +2,7 @@
 layout: post
 title:  搭建github博客
 categories: [blog]
+comments: true
 tags: [blog, github]
 ---
 

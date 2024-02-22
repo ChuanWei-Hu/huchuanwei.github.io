@@ -2,6 +2,7 @@
 layout: post
 title:  Armadillo使用手册3
 categories: [blog]
+comments: true
 tags: [blog, Armadillo, cpp]
 ---
 
