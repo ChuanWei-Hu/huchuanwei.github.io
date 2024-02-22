@@ -19,7 +19,7 @@ tags: [blog, Armadillo, cpp]
 
 | Function | Description | Matlab | Armadillo | Note |
 | --- | --- | --- | --- | --- |
-| 矩阵matrix：A=[] | 返回一个 2×2 的初始化矩阵 | A=[1,2; 3,4] | "arma::mat A={{1,2},{3,4}}" | $A=[1,2; 3,4]$|
+| 矩阵matrix：A=[] | 返回一个 2×2 的初始化矩阵 | A=[1,2; 3,4] | arma::mat A={{1,2},{3,4}} | $A=[1,2; 3,4]$|
 | eye(n, m) | 返回一个主对角线元素为 1 且其他位置元素为 0 的 n×m 矩阵; 如果n=m,返回一个主对角线元素为 1 且其他位置元素为 0 的 n×n 单位矩阵。 | `I = eye(2,3)` | `arma::mat A = arma::eye(2,3);` | $y1 = [1,0,0; 0,1,0]$ |
 | ones(n, m) | 返回一个 n×m 的全 1 矩阵 | `X = ones(2,3)` | `arma::mat A = arma::ones(2,3);` | $y1 = [1,1,1; 1,1,1]$ |
 | zeros(n, m) | 返回一个 n×m 的全 0 矩阵 | `X = zeros(2,3)` | `arma::mat A = arma::zeros(2,3);` | $y1 = [1,0,0; 0,1,0]$ |
@@ -642,8 +642,7 @@ arma::mat D =arma::join_vert(A,B);
 
 ## 推荐阅读
 
-- [阿里又一个 20k+ stars 开源项目诞生，恭喜 fastjson！](https://mp.weixin.qq.com/s/RNKDCK2KoyeuMeEs6GUrow)
-
+- [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
 
 ## Additional Resources
 
