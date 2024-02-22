@@ -7,7 +7,7 @@ tags: [blog, Armadillo, cpp]
 
 > Armadillo是一个高性能的Cpp矩阵运算库，与Matlab的调用方式非常相似，对于熟悉Matlab的人来说，使用Armadillo库很方便。本文主要介绍Armadillo支持的数据类型。
 
-[toc]
+[TOC]
 
 <!--more-->
 
@@ -28,7 +28,6 @@ tags: [blog, Armadillo, cpp]
 | `double` | `double` | `drowvec = Row<double>` 或者 `rowvec = Row<double>` | `dvec = dcolvec = Col<double>` 或者 `vec = colvec = Col<double>` | `dmat = Mat<double>` 或者 `mat = Mat<double>`  | `sp_dmat = SpMat<double>` 或者 `sp_mat = SpMat<double>` | `dcube = Cube<double>` 或者 `cube = Cube<double>` | `field<rowvec>`, `field<vec>`, `field<mat>` | 双精度浮点数 |
 | `std::complex<float>` | `cx_float` | `cx_frowvec = Row<cx_float>` | `cx_fvec = cx_fcolvec = Col<cx_float>` | `cx_fmat = Mat<cx_float>`  | `sp_cx_fmat = SpMat<cx_float>` | `cx_fcube = Cube<cx_float>` | `field<cx_frowvec>`, `field<cx_fvec>`, `field<cx_fmat>` | 单精度浮点复数 |
 | `std::complex<double>` | `cx_double` | `cx_drowvec = Row<cx_double>` 或者 `cx_rowvec = Row<cx_double>` | `cx_dvec = cx_dcolvec = Col<cx_double>` 或者 `cx_vec = cx_colvec = Col<cx_double>` | `cx_dmat = Mat<cx_double>` 或者 `cx_mat = Mat<cx_double>`  | `sp_cx_dmat = SpMat<cx_double>` 或者 `sp_cx_mat = SpMat<cx_double>` | `cx_dcube = Cube<cx_double>` 或者 `cx_cube = Cube<cx_double>` | `field<cx_rowvec>`, `field<cx_vec>`, `field<cx_dmat>` | 双精度浮点复数 |
-
 
 ### 1D-行向量
 
@@ -52,25 +51,24 @@ tags: [blog, Armadillo, cpp]
   - `urowvec = Row<uword>`：无符号整数
   - `irowvec = Row<sword>`：有符号整数
 - 构造函数
-  - rowvec()
-  - rowvec(n_elem)
-  - rowvec(n_elem, fill_form)        (elements are initialised according to fill_form)
-  - rowvec(size(X))
-  - rowvec(size(X), fill_form)        (elements are initialised according to fill_form)
-  - rowvec(rowvec)
-  - rowvec(mat)        (std::logic_error exception is thrown if the given matrix has more than one row)
-  - rowvec(initializer_list)
-  - rowvec(string)        (elements separated by spaces)
-  - rowvec(std::vector)
-  - cx_rowvec(rowvec,rowvec)        (for constructing a complex row vector out of two real row vectors)
+  - `rowvec()`
+  - `rowvec(n_elem)`
+  - `rowvec(n_elem, fill_form)`        (elements are initialised according to fill_form)
+  - `rowvec(size(X))`
+  - `rowvec(size(X), fill_form) `       (elements are initialised according to fill_form)
+  - `rowvec(rowvec)`
+  - `rowvec(mat)`        (std::logic_error exception is thrown if the given matrix has more than one row)
+  - `rowvec(initializer_list)`
+  - `rowvec(string)`        (elements separated by spaces)
+  - `rowvec(std::vector)`
+  - `cx_rowvec(rowvec,rowvec)`        (for constructing a complex row vector out of two real row vectors)
 - 初始化值
-  - fill::zeros ↦ set all elements to 0
-  - fill::ones ↦ set all elements to 1
-  - fill::randu ↦ set all elements to random values from a uniform distribution in the [0,1] interval
-  - fill::randn ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit
-   variance
-  - fill::value(scalar)     ↦ set all elements to specified scalar
-  - fill::none ↦ do not initialise the elements
+  - `fill::zeros` ↦ set all elements to 0
+  - `fill::ones` ↦ set all elements to 1
+  - `fill::randu` ↦ set all elements to random values from a uniform distribution in the [0,1] interval
+  - `fill::randn` ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit variance
+  - `fill::value(scalar)`     ↦ set all elements to specified scalar
+  - `fill::none` ↦ do not initialise the elements
 
 #### 示例介绍
 
@@ -110,25 +108,24 @@ arma::rowvec z = A.row(5); // extract a row vector
   - `uvec = ucolvec = Col<uword>`：无符号整数
   - `ivec = icolvec = Col<sword>`：有符号整数
 - 构造函数
-  - vec()
-  - vec(n_elem)
-  - vec(n_elem, fill_form)        (elements are initialised according to fill_form)
-  - vec(size(X))
-  - vec(size(X), fill_form)        (elements are initialised according to fill_form)
-  - vec(vec)
-  - vec(mat)        (std::logic_error exception is thrown if the given matrix has more than one column)
-  - vec(initializer_list)
-  - vec(string)        (elements separated by spaces)
-  - vec(std::vector)
-  - cx_vec(vec,vec)        (for constructing a complex vector out of two real vectors)
+  - `vec()`
+  - `vec(n_elem)`
+  - `vec(n_elem, fill_form)`        (elements are initialised according to fill_form)
+  - `vec(size(X))`
+  - `vec(size(X), fill_form)`        (elements are initialised according to fill_form)
+  - `vec(vec)`
+  - `vec(mat)`        (std::logic_error exception is thrown if the given matrix has more than one column)
+  - `vec(initializer_list)`
+  - `vec(string)`        (elements separated by spaces)
+  - `vec(std::vector)`
+  - `cx_vec(vec,vec)`        (for constructing a complex vector out of two real vectors)
 - 初始化值
-  - fill::zeros ↦ set all elements to 0
-  - fill::ones ↦ set all elements to 1
-  - fill::randu ↦ set all elements to random values from a uniform distribution in the [0,1] interval
-  - fill::randn ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit
-   variance
-  - fill::value(scalar)     ↦ set all elements to specified scalar
-  - fill::none ↦ do not initialise the elements
+  - `fill::zeros` ↦ set all elements to 0
+  - `fill::ones` ↦ set all elements to 1
+  - `fill::randu` ↦ set all elements to random values from a uniform distribution in the [0,1] interval
+  - `fill::randn` ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit variance
+  - `fill::value(scalar)`     ↦ set all elements to specified scalar
+  - `fill::none` ↦ do not initialise the elements
 
 #### 示例介绍
 
@@ -169,28 +166,27 @@ arma::vec z = A.col(5); // extract a column vector
   - `umat = Mat<uword>`：无符号整数
   - `imat = Mat<sword>`：有符号整数
 - 构造函数
-  - mat()
-  - mat(n_rows, n_cols)
-  - mat(n_rows, n_cols, fill_form)        (elements are initialised according to fill_form)
-  - mat(size(X))
-  - mat(size(X), fill_form)        (elements are initialised according to fill_form)
-  - mat(mat)
-  - mat(vec)
-  - mat(rowvec)
-  - mat(initializer_list)
-  - mat(string)
-  - mat(std::vector)        (treated as a column vector)
-  - mat(sp_mat)        (for converting a sparse matrix to a dense matrix)
-  - cx_mat(mat,mat)        (for constructing a complex matrix out of two real matrices)
+  - `mat()`
+  - `mat(n_rows, n_cols)`
+  - `mat(n_rows, n_cols, fill_form)`        (elements are initialised according to fill_form)
+  - `mat(size(X))`
+  - `mat(size(X), fill_form)`        (elements are initialised according to fill_form)
+  - `mat(mat)`
+  - `mat(vec)`
+  - `mat(rowvec)`
+  - `mat(initializer_list)`
+  - `mat(string)`
+  - `mat(std::vector)`        (treated as a column vector)
+  - `mat(sp_mat)`        (for converting a sparse matrix to a dense matrix)
+  - cx_mat(mat,mat)`        (for constructing a complex matrix out of two real matrices)
 - 初始化值
-  - fill::zeros ↦ set all elements to 0
-  - fill::ones ↦ set all elements to 1
-  - fill::eye ↦ set the elements on the main diagonal to 1 and off-diagonal elements to 0
-  - fill::randu ↦ set all elements to random values from a uniform distribution in the [0,1] interval
-  - fill::randn ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit
-   variance
-  - fill::value(scalar)     ↦ set all elements to specified scalar
-  - fill::none ↦ do not initialise the elements
+  - `fill::zeros` ↦ set all elements to 0
+  - `fill::ones` ↦ set all elements to 1
+  - `fill::eye` ↦ set the elements on the main diagonal to 1 and off-diagonal elements to 0
+  - `fill::randu` ↦ set all elements to random values from a uniform distribution in the [0,1] interval
+  - `fill::randn` ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit variance
+  - `fill::value(scalar)`     ↦ set all elements to specified scalar
+  - `fill::none` ↦ do not initialise the elements
 
 ##### 示例介绍
 
@@ -256,21 +252,20 @@ arma::mat H(&aux_mem[0], 4, 6, false);  // use auxiliary memory
   - `sp_umat = SpMat<uword>`：无符号整数
   - `sp_imat = SpMat<sword>`：有符号整数
 - 构造函数
-  - sp_mat()
-  - sp_mat(n_rows, n_cols)
-  - sp_mat(size(X))
-  - sp_mat(sp_mat)
-  - sp_mat(vec)            (for converting a dense matrix to a sparse matrix)
-  - cx_mat(sp_mat,sp_mat)        (for constructing a complex matrix out of two real matrices)
+  - `sp_mat()`
+  - `sp_mat(n_rows, n_cols)`
+  - `sp_mat(size(X))`
+  - `sp_mat(sp_mat)`
+  - `sp_mat(vec)`            (for converting a dense matrix to a sparse matrix)
+  - `cx_mat(sp_mat,sp_mat)`        (for constructing a complex matrix out of two real matrices)
 - 初始化值
-  - fill::zeros ↦ set all elements to 0
-  - fill::ones ↦ set all elements to 1
-  - fill::eye ↦ set the elements on the main diagonal to 1 and off-diagonal elements to 0
-  - fill::randu ↦ set all elements to random values from a uniform distribution in the [0,1] interval
-  - fill::randn ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit
-   variance
-  - fill::value(scalar)     ↦ set all elements to specified scalar
-  - fill::none ↦ do not initialise the elements
+  - `fill::zeros` ↦ set all elements to 0
+  - `fill::ones` ↦ set all elements to 1
+  - `fill::eye` ↦ set the elements on the main diagonal to 1 and off-diagonal elements to 0
+  - `fill::randu` ↦ set all elements to random values from a uniform distribution in the [0,1] interval
+  - `fill::randn` ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit variance
+  - `fill::value(scalar)`     ↦ set all elements to specified scalar
+  - `fill::none` ↦ do not initialise the elements
 
 ##### 示例介绍
 
@@ -320,21 +315,20 @@ arma::sp_mat X(locations, values);
   - `ucube = Cube<uword>`：无符号整数
   - `icube = Cube<sword>`：有符号整数
 - 构造函数
-  - cube()
-  - cube(n_rows, n_cols, n_slices)
-  - cube(n_rows, n_cols, n_slices, fill_form)        (elements are initialised according to fill_form)
-  - cube(size(X))
-  - cube(size(X), fill_form)        (elements are initialised according to fill_form)
-  - cube(cube)
-  - cx_cube(cube, cube)        (for constructing a complex cube out of two real cubes)
+  - `cube()`
+  - `cube(n_rows, n_cols, n_slices)`
+  - `cube(n_rows, n_cols, n_slices, fill_form)`        (elements are initialised according to fill_form)
+  - `cube(size(X))`
+  - `cube(size(X), fill_form)`        (elements are initialised according to fill_form)
+  - `cube(cube)`
+  - `cx_cube(cube, cube)`        (for constructing a complex cube out of two real cubes)
 - 初始化值
-  - fill::zeros ↦ set all elements to 0
-  - fill::ones ↦ set all elements to 1
-  - fill::randu ↦ set all elements to random values from a uniform distribution in the [0,1] interval
-  - fill::randn ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit
-   variance
-  - fill::value(scalar)     ↦ set all elements to specified scalar
-  - fill::none ↦ do not initialise the elements
+  - `fill::zeros` ↦ set all elements to 0
+  - `fill::ones` ↦ set all elements to 1
+  - `fill::randu` ↦ set all elements to random values from a uniform distribution in the [0,1] interval
+  - `fill::randn` ↦ set all elements to random values from a normal/Gaussian distribution with zero mean and unit variance
+  - `fill::value(scalar)`     ↦ set all elements to specified scalar
+  - `fill::none` ↦ do not initialise the elements
 
 #### 示例介绍
 
