@@ -46,46 +46,11 @@ X.raw_print("X");
 X.brief_print("X");
 ```
 
-## 数据保存和读取
-
-> [save_load_mat](https://arma.sourceforge.net/docs.html#save_load_mat)
-
-### 编程对应表
-
-| Matlab | Armadillo | Notes |
-| :--- | :--- | --- |
-| `save(filename,variables)` | `.save( filename )` | 格式化输出显示|
-| `load( filename )` | `.load( filename )` | 输出显示X矩阵|
-
-### 示例介绍（matlab vs. cpp）
-
-```cpp
-// 1. 初始化A矩阵
-// matlab
-A = [1 2 3; 4 5 6; 7 8 9];
-// cpp
-A = {{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
-
-// 2. 保存A矩阵
-// matlab
-save('matrixA.mat', 'A');
-// cpp
-A.save("matrixA.bin");
-
-// 3. 读取matrixA
-// matlab
-load('matrixA.mat', 'A');
-// cpp
-mat B;
-bool = B.load("matrixA.bin");
-if(ok == false){
-  cout << "problem with loading" << endl;
-}
-```
-
 ## 推荐阅读
 
-- [阿里又一个 20k+ stars 开源项目诞生，恭喜 fastjson！](https://mp.weixin.qq.com/s/RNKDCK2KoyeuMeEs6GUrow)
+- [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
+- [Armadillo使用手册2](https://www.huchuanwei.com/articles/2023-06/armadillo_userguide_2)
+- [Armadillo使用手册3](https://www.huchuanwei.com/articles/2023-06/armadillo_userguide_3)
 
 ## Additional Resources
 
