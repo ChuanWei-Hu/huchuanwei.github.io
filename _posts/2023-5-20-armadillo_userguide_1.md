@@ -8,6 +8,9 @@ tags: [blog, Armadillo, cpp]
 
 > Armadillo是一个高性能的Cpp矩阵运算库，与Matlab的调用方式非常相似，对于熟悉Matlab的人来说，使用Armadillo库很方便。本文主要介绍Armadillo支持的数据类型。
 
+* TOC
+{:toc}
+
 <!--more-->
 
 ## 基础数值类型
