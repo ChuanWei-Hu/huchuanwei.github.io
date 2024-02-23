@@ -643,6 +643,7 @@ arma::mat D =arma::join_vert(A,B);
 ## 推荐阅读
 
 - [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
+- [Armadillo使用手册2](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_2)
 
 ## Additional Resources
 

@@ -6,7 +6,7 @@ comments: true
 tags: [Armadillo]
 ---
 
-> Armadillo是一个高性能的Cpp矩阵运算库，与Matlab的调用方式非常相似，对于熟悉Matlab的人来说，使用Armadillo库很方便。本文主要介绍Armadillo基础数值的通用操作。
+> 本文主要介绍Armadillo基础数值的通用操作。
 
 * TOC
 {:toc}
@@ -643,6 +643,7 @@ arma::mat D =arma::join_vert(A,B);
 ## 推荐阅读
 
 - [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
+- [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-06/armadillo_userguide_2)
 
 ## Additional Resources
 

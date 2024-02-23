@@ -1,19 +1,21 @@
 ---
 layout: post
-title:  Armadillo使用手册4-Cpp扩展函数
+title:  Armadillo使用手册3
 categories: [blog]
 comments: true
-tags: [blog, Armadillo, cpp]
+tags: [Armadillo]
 ---
 
-> Armadillo是一个高性能的Cpp矩阵运算库，与Matlab的调用方式非常相似，对于熟悉Matlab的人来说，使用Armadillo库很方便。本文主要介绍Armadillo的扩展函数。
+> 本文主要介绍Armadillo数据的保存和读取。
 
 * TOC
 {:toc}
 
 <!--more-->
 
-## 扩展函数
+## 显示输出
+
+> [print](https://arma.sourceforge.net/docs.html#print)
 
 ### 编程对应表
 
@@ -29,7 +31,7 @@ tags: [blog, Armadillo, cpp]
 // matlab
 A = [1 2 3; 4 5 6; 7 8 9];
 // cpp
-A = {{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
+A = \{\{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
 
 // 2. 格式化显示矩阵A中的（1，1）元素
 // matlab
@@ -46,11 +48,47 @@ X.raw_print("X");
 X.brief_print("X");
 ```
 
+## 数据保存和读取
+
+> [save_load_mat](https://arma.sourceforge.net/docs.html#save_load_mat)
+
+### 编程对应表
+
+| Matlab | Armadillo | Notes |
+| :--- | :--- | --- |
+| `save(filename,variables)` | `.save( filename )` | 格式化输出显示|
+| `load( filename )` | `.load( filename )` | 输出显示X矩阵|
+
+### 示例介绍（matlab vs. cpp）
+
+```cpp
+// 1. 初始化A矩阵
+// matlab
+A = [1 2 3; 4 5 6; 7 8 9];
+// cpp
+A = \{\{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
+
+// 2. 保存A矩阵
+// matlab
+save('matrixA.mat', 'A');
+// cpp
+A.save("matrixA.bin");
+
+// 3. 读取matrixA
+// matlab
+load('matrixA.mat', 'A');
+// cpp
+mat B;
+bool = B.load("matrixA.bin");
+if(ok == false){
+  cout << "problem with loading" << endl;
+}
+```
+
 ## 推荐阅读
 
 - [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
 - [Armadillo使用手册2](https://www.huchuanwei.com/articles/2023-06/armadillo_userguide_2)
-- [Armadillo使用手册3](https://www.huchuanwei.com/articles/2023-06/armadillo_userguide_3)
 
 ## Additional Resources
 

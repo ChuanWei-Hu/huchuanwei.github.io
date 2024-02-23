@@ -31,7 +31,7 @@ tags: [blog, Armadillo, cpp]
 // matlab
 A = [1 2 3; 4 5 6; 7 8 9];
 // cpp
-A = {{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
+A = \{\{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
 
 // 2. 格式化显示矩阵A中的（1，1）元素
 // matlab
@@ -66,7 +66,7 @@ X.brief_print("X");
 // matlab
 A = [1 2 3; 4 5 6; 7 8 9];
 // cpp
-A = {{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
+A = \{\{1, 2, 3}, {4，5, 6}, {7, 8， 9}};
 
 // 2. 保存A矩阵
 // matlab
@@ -89,6 +89,7 @@ if(ok == false){
 
 - [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
 - [Armadillo使用手册2](https://www.huchuanwei.com/articles/2023-06/armadillo_userguide_2)
+- [Armadillo使用手册3](https://www.huchuanwei.com/articles/2023-06/armadillo_userguide_3)
 
 ## Additional Resources
 
