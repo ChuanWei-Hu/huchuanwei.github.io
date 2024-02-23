@@ -115,6 +115,12 @@ tags: [Armadillo]
 | .index_min() |返回矩阵或立方体最小值的坐标；返回值为一个无符号整数 |
 | .index_max() | 返回矩阵或立方体最大值的坐标；返回值为一个无符号整数 |
 
+## 更新日志
+
+- date: 2024-02-22
+  - desc: 添加目录
+  - desc: 添加更新日志，推荐阅读和文档
+
 ## 推荐阅读
 
 - [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
@@ -123,16 +129,16 @@ tags: [Armadillo]
 - [Armadillo使用手册4](https://www.huchuanwei.com/articles/2023-07/armadillo_userguide_4)
 - [Armadillo使用手册5](https://www.huchuanwei.com/articles/2023-08/armadillo_userguide_5)
 
-## Additional Resources
+## 补充资源
 
-### Documentation
+### 文档
 
 1. [pyarma](https://pyarma.sourceforge.io/docs.html)
 2. [arma](https://arma.sourceforge.net)
 3. [Armadillo: a template-based C++ library for linear algebra.](https://arma.sourceforge.net/armadillo_joss_2016.pdf)
 4. [arithmetic-operators](https://ww2.mathworks.cn/help/matlab/arithmetic-operators.html)
 
-### Useful Websites
+### 网站
 
 1. [Armadillo使用说明¶](https://docs.hpc.sjtu.edu.cn/app/compilers_and_languages/armadillo.html)
 2. [C++线代运算库Armadillo安装与使用](http://zhaoxuhui.top/blog/2020/10/11/armadillo-introduction-and-installation.html)

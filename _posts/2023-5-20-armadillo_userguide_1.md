@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Armadillo使用手册1
+title:  Armadillo使用手册1-基础数值类型
 categories: [blog]
 comments: true
 tags: [Armadillo]
@@ -404,14 +404,24 @@ F.print("F:");
 F.save("mat_field");
 ```
 
-## Additional Resources
+## 更新日志
 
-### Documentation
+- date: 2024-02-22
+  - desc: 添加目录
+  - desc: 添加更新日志，推荐阅读和文档
+
+## 推荐阅读
+
+- [Armadillo使用手册1](https://www.huchuanwei.com/articles/2023-05/armadillo_userguide_1)
+
+## 补充资源
+
+### 文档
 
 1. [pyarma](https://pyarma.sourceforge.io/docs.html)
 2. [arma](https://arma.sourceforge.net)
 
-### Useful Websites
+### 网站
 
 1. [Armadillo使用说明¶](https://docs.hpc.sjtu.edu.cn/app/compilers_and_languages/armadillo.html)
 2. [C++线代运算库Armadillo安装与使用](http://zhaoxuhui.top/blog/2020/10/11/armadillo-introduction-and-installation.html)

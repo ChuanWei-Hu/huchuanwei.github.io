@@ -1,4 +1,7 @@
 # updates data
+- date: 2024-02-23
+  description:
+    - desc: 增加giscus评论系统，see[基于 giscus 为网站添加评论系统](https://fengchao.pro/blog/comment-system-with-giscus/)
 - date: 2020-05-10
   description:
     - desc: 增加jemoji插件, emoji换行显示问题fix,see[https://github.com/jekyll/jemoji/issues/24]
