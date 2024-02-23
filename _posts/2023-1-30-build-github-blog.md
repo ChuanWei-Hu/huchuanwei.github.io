@@ -3,7 +3,7 @@ layout: post
 title:  搭建github博客
 categories: [blog]
 comments: true
-tags: [blog, github]
+tags: [blog]
 ---
 
 > 搭建Github博客的过程比较简单，跟着Github找到的仓库一步一步的做就可以了，关键在于通过readme文件的关键字来查找相关的github工程。
