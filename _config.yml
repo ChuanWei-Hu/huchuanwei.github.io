@@ -5,7 +5,7 @@
 #
 title: huchuanwei
 email: huchuanwei1018@gmail.com
-description: huchuanwei's blog,powered by jekyll.
+description: huchuanwei's blog, powered by jekyll.
 url: https://www.huchuanwei.com # the base hostname & protocol for your site
 keywords: ["jekyll", "python", "cuda","blog"]
 
@@ -45,7 +45,7 @@ owner:
   job: "Computing Parallel Engineer"
   bio: "A Engineer who loves design awesome things."
   email: huchuanwei1018@gmail.com
-  disqus-shortname: Web#username
+  disqus-shortname: Web
   twitter:  #username
   facebook: #username
   google:
