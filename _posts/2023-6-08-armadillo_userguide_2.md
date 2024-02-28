@@ -476,7 +476,7 @@ C.fill(2.0); //某个行范围或列范围内的元素变为2
 
 | Matlab | Armadillo | Notes |
 | :--- | :--- | --- |
-| `reshape( X, n_rows, n_cols )` | ``arma::reshape( X, n_rows, n_cols )` | 重构 |
+| `reshape( X, n_rows, n_cols )` | `arma::reshape( X, n_rows, n_cols )` | 重构 |
 | `A.'或transpose(A)` | `A.st()` | 非共轭转置 |
 | `A'` | `A.t()` | 共轭转置 |
 | `flipud(X)` | `arma::flipud(X)` | 上下翻转矩阵的行 |
