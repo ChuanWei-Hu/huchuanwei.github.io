@@ -1,4 +1,9 @@
+- name: skill tree
+  descr: "There are skill tree for myself."
+  image: invoker.png
+  github: https://github.com/chuanweihu/skill_tree
+
 - name: blog collection
   descr: "There are several fantastic blogs."
-  image: pong.png
+  image: heros.png
   github: https://github.com/chuanweihu/blog_collection
