@@ -135,8 +135,20 @@ chmod u+x migrate2rocky.sh
 
 ## 参考
 
+## Additional Resources
+
+### Documentation
+
+1. [How to migrate to Rocky Linux from CentOS Stream, CentOS, AlmaLinux, RHEL, or Oracle Linux](https://docs.rockylinux.org/guides/migrate2rocky/)
+
+### Useful Websites
+
 1. [CentOS 7 迁移到Rocky Linux 9](https://cloud.tencent.com/developer/article/2442737)
-2. [How to migrate to Rocky Linux from CentOS Stream, CentOS, AlmaLinux, RHEL, or Oracle Linux](https://docs.rockylinux.org/guides/migrate2rocky/)
-3. [CentOS EOL应对方案](https://help.aliyun.com/zh/ecs/user-guide/options-for-dealing-with-centos-linux-end-of-life#4276c562c00mi)
-4. [【Rocky 9】Step by Step 从 CentOS 7.9 升级到 Rocky Linux 9.2](https://www.modb.pro/db/1717086120041865216)
-5. [升级CentOS 7到CentOS 8](https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/redhat_linux/centos/upgrade_centos_7_to_8.html)
+2. [CentOS EOL应对方案](https://help.aliyun.com/zh/ecs/user-guide/options-for-dealing-with-centos-linux-end-of-life#4276c562c00mi)
+3. [【Rocky 9】Step by Step 从 CentOS 7.9 升级到 Rocky Linux 9.2](https://www.modb.pro/db/1717086120041865216)
+4. [升级CentOS 7到CentOS 8](https://cloud-atlas.readthedocs.io/zh-cn/latest/linux/redhat_linux/centos/upgrade_centos_7_to_8.html)
+
+### Related Books
+
+1. [鸟哥的 Linux 私房菜 -- 基础学习篇目录 第三版](http://cn.linux.vbird.org/linux_basic/linux_basic.php)
+2. [鸟哥的 Linux 私房菜 -- 基础学习篇目录 第四版](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content)
