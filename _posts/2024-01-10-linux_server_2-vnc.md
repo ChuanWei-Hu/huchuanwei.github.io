@@ -9,7 +9,7 @@ tags: [Linux]
 > 本文主要介绍通过Linux系统服务器的VNC远程登录。
 
 * TOC
-  {:toc}
+{:toc}
 
 <!--more-->
 
