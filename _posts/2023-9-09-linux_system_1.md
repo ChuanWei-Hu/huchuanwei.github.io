@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Linux系统-CentOS系统安装
+title:  Linux系统-CentOS/Rocky系统的安装
 categories: [blog]
 comments: true
-tags: [Armadillo]
+tags: [Linux]
 ---
 
-> 本文主要介绍Armadillo常见的功能表格整理。
+> 本文主要介绍CentOS/Rocky系统的安装，通过制作U盘启动工具来安装系统。
 
 * TOC
 {:toc}
