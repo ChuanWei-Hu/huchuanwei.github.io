@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Linux系统-CentOS/Rocky系统的NFS服务
+title:  Linux系统-CentOS/Rocky系统的NIS服务
 categories: [blog]
 comments: true
 tags: [Linux]
@@ -365,8 +365,8 @@ CREATE_MAIL_SPOOL=yes
 [root@c1 ~]# cd /var/yp/;make && systemctl restart ypserv
 ```
 
-> - 批量创建账号脚本
->
+- 批量创建账号脚本
+
 ```shell
 # 编写批量账号脚本
 [root@c1 ~]# vi account.sh
