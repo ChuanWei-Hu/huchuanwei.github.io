@@ -1,9 +1,24 @@
-- name: skill tree
-  descr: "There are skill tree for myself."
+- name: 系统建设
+  descr: 为了保证开发环境的安全及提高研发效率而构建的内网服务器。
   image: invoker.png
-  github: https://github.com/chuanweihu/skill_tree
+  github: https://github.com/chuanweihu/work_project_collection/blob/main/system.md
 
-- name: blog collection
-  descr: "There are several fantastic blogs."
+- name: 算法优化
+  descr: 解决仿真与优化的算法问题。
   image: heros.png
-  github: https://github.com/chuanweihu/blog_collection
+  github: https://github.com/chuanweihu/work_project_collection/blob/main/algorithm.md
+
+- name: 平台开发
+  descr: 突破国外技术封锁而研发的EDA平台。
+  image: heros.png
+  github: https://github.com/chuanweihu/work_project_collection/blob/main/develop.md
+
+- name: 器件设计
+  descr: 为客户设计符合技术要求的滤波器产品。
+  image: heros.png
+  github: https://github.com/chuanweihu/work_project_collection/blob/main/designer.md
+
+- name: 技术研究
+  descr: 分析现有技术的局限性，识别潜在的技术创新点。
+  image: heros.png
+  github: https://github.com/chuanweihu/work_project_collection/blob/main/research.md
