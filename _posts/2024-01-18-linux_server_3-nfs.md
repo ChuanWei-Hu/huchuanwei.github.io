@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Linux系统-CentOS/Rocky系统的NFS服务
+title:  使用NFS服务共享文件
 categories: [blog]
 comments: true
 tags: [Linux]

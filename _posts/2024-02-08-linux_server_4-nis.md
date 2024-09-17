@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Linux系统-CentOS/Rocky系统的NIS服务
+title:  使用NIS服务管理身份信息
 categories: [blog]
 comments: true
 tags: [Linux]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Linux系统-CentOS/Rocky系统的VNC远程登录
+title:  使用VNC服务管理远程图形化主机
 categories: [blog]
 comments: true
 tags: [Linux]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Linux系统-CentOS/Rocky系统的SSH远程登录
+title:  使用SSH服务管理远程主机
 categories: [blog]
 comments: true
 tags: [Linux]
